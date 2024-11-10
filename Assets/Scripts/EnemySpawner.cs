@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab; // Prefab del enemigo
-    public Transform[] spawnPoints; // Puntos de generación
-    public float spawnInterval = 5f; // Intervalo de generación
-    private float spawnTimer; // Temporizador
+    public GameObject enemyPrefab; 
+    public Transform[] spawnPoints; 
+    public float spawnInterval = 5f;
+    private float spawnTimer; 
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
         if (spawnTimer <= 0)
         {
             SpawnEnemy();
-            spawnTimer = spawnInterval; // Reinicia el temporizador
+            spawnTimer = spawnInterval; 
         }
     }
 

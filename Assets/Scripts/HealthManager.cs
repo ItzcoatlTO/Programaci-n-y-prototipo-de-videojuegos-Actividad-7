@@ -6,7 +6,7 @@ public class HealthManager : MonoBehaviour
     public int currentHealth;
     public GameObject explosionPrefab;
 
-    public static int enemiesDestroyed = 0; // Contador de enemigos derribados
+    public static int enemiesDestroyed = 0; 
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class HealthManager : MonoBehaviour
             Explode();
             if (gameObject.CompareTag("Enemy"))
             {
-                enemiesDestroyed++; // Incrementa el contador si es un enemigo
+                enemiesDestroyed++; 
                 Debug.Log($"Enemigos derribados: {enemiesDestroyed}");
             }
             Destroy(gameObject);
